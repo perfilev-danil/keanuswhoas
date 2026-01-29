@@ -1,0 +1,31 @@
+.nav-movies {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.nav-movies__list {
+  list-style: none;
+}
+
+.nav-movies__item {
+  width: 100%;
+}
+
+.nav-movies__link {
+  display: block;
+  width: 100%;
+}
+
+.nav-movies__link--active {
+  padding: 10px;
+  color: white;
+  background-color: #456b7d;
+  border: 1px solid black;
+}
+
+@media (max-width: 800px) {
+  .nav-movies {
+    height: auto;
+  }
+}

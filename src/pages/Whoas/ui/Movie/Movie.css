@@ -1,0 +1,33 @@
+.movie {
+  display: flex;
+  justify-content: space-between;
+}
+
+.movie__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.movie__info-part {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.movie__info-part h1 {
+  width: 60%;
+  text-wrap: balance;
+}
+
+@media (max-width: 800px) {
+  .movie {
+    flex-direction: column;
+  }
+
+  .movie__info-part h1 {
+    text-align: center;
+    align-self: center;
+    margin: 20px 0;
+  }
+}
