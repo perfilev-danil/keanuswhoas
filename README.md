@@ -9,7 +9,7 @@
 
 A web application for browsing iconic **"Whoa"** moments from Keanu Reeves movies using the public API.
 
-[Live Demo](#) · [API](https://whoa.onrender.com/)
+[Live Demo](https://keanuswhoas.vercel.app) · [API](https://whoa.onrender.com/)
 
 ---
 
@@ -84,6 +84,10 @@ npm run dev
 - useMemo & useCallback hooks to prevent unnecessary re-renders
 - Custom debounce hook for search input
 - Efficient Redux state updates
+
+## Project Structure
+
+The project is built following the Feature-Sliced Design (FSD) methodology. Each feature, shared component, and UI element is organized into separate layers (widgets, entities, features, shared, pages), ensuring clear separation of concerns and scalable architecture.
 
 ## 📄 License
 
