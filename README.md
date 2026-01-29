@@ -1,7 +1,7 @@
 # The Keanu Reeves's Whoas Base 🎬
 
-<div align="center">
-  <img src="https://img.shields.io/badge/Keanu-Reeves-blue?style=for-the-badge" alt="Keanu Reeves">
+<div>
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=000" alt="JavaScript">
   <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React">
   <img src="https://img.shields.io/badge/Redux-764ABC?style=for-the-badge&logo=redux&logoColor=white" alt="Redux">
   <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite">
@@ -9,7 +9,7 @@
 
 A web application for browsing iconic **"Whoa"** moments from Keanu Reeves movies using the public API.
 
-[Live Demo](#) · [API](#)
+[Live Demo](#) · [API](https://whoa.onrender.com/)
 
 ---
 
