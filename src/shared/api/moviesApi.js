@@ -11,8 +11,8 @@ export const moviesApi = createApi({
       query: () => "/movies",
     }),
     getWhoasByMovie: builder.query({
-      query: ({ movie, results = 100 }) =>
-        `/random?movie=${encodeURIComponent(movie)}&results=${results}`,
+      query: ({ movieName, results = 100 }) =>
+        `/random?movie=${encodeURIComponent(movieName)}&results=${results}`,
       transformResponse: (response) => {
         const map = new Map();
 

@@ -6,12 +6,12 @@ import Movie from "./ui/Movie/Movie";
 import Loader from "../../shared/ui/Loader/Loader";
 
 const Whoas = () => {
-  const { id } = useParams();
+  const { movieName } = useParams();
   const {
     data: whoas = [],
     isFetching,
     isError,
-  } = useGetWhoasByMovieQuery({ movie: id });
+  } = useGetWhoasByMovieQuery({ movieName: movieName }, { skip: !movieName });
 
   if (isFetching) {
     return <Loader />;
