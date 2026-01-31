@@ -9,7 +9,6 @@ const Poster = ({ movie }) => {
     <article className="poster">
       <div className="poster__img-wrapper">
         {!isLoaded && <Loader />}
-
         <img
           className={`poster__img ${isLoaded ? "poster__img--visible" : ""}`}
           src={movie.poster}
