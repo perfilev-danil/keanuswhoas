@@ -13,6 +13,8 @@ const Header = () => {
   const [search, setSearch] = useState("");
   const debouncedSearch = useDebounce(search, 500);
 
+  /*
+  
   useEffect(() => {
     if (debouncedSearch.trim()) {
       navigate(`/whoas/${encodeURIComponent(debouncedSearch.trim())}`);
@@ -21,6 +23,14 @@ const Header = () => {
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [debouncedSearch]);
+  */
+
+  useEffect(() => {
+    const value = debouncedSearch.trim();
+    if (!value) return;
+
+    navigate(routes.Whoas.replace(":movieName", encodeURIComponent(value)));
+  }, [debouncedSearch, navigate]);
 
   return (
     <header className="header">
