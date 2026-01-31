@@ -10,10 +10,11 @@ const Banner = () => {
       <img
         className={`banner__img ${isLoaded ? "banner__img--visible" : ""}`}
         src={bannerImg}
-        alt="John Wick"
+        alt="Gabriel"
         onLoad={() => setIsLoaded(true)}
       />
       {!isLoaded && <Loader />}
+
       {isLoaded && (
         <div className="banner__content">
           <h1 className="banner__title important">

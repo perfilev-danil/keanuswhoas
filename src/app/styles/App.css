@@ -41,6 +41,9 @@
 @media (max-width: 800px) {
   .app {
     width: 100%;
+    min-height: 100dvh;
+    /* min-height: 100svh; */
+    padding-bottom: env(safe-area-inset-bottom);
   }
 
   .app__main {
