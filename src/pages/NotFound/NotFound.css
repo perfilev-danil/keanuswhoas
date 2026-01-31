@@ -1,0 +1,9 @@
+.not-found {
+  display: flex;
+  flex-direction: column;
+}
+
+.not-found__go-home {
+  font-weight: bold;
+  cursor: pointer;
+}
