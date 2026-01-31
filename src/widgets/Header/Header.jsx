@@ -34,22 +34,22 @@ const Header = () => {
           aria-label="Search by movie name"
         />
       </div>
+      <div className="header__wrapper">
+        <NavLink to={routes.Home} className="header__logo logo">
+          KEANU'S WHOAS
+        </NavLink>
+        <NavLink
+          to={routes.Favorites}
+          className="header__favorites"
+          aria-label="Favorites"
+        >
+          <img className="header__favorites-icon" src={favoriteImg} />
 
-      <NavLink
-        to={routes.Favorites}
-        className="header__favorites"
-        aria-label="Favorites"
-      >
-        <img className="header__favorites-icon" src={favoriteImg} />
-
-        {favoritesCount > 0 && (
-          <span className="header__favorites-badge">{favoritesCount}</span>
-        )}
-      </NavLink>
-
-      <NavLink to={routes.Home} className="header__logo logo">
-        KEANU'S WHOAS
-      </NavLink>
+          {favoritesCount > 0 && (
+            <span className="header__favorites-badge">{favoritesCount}</span>
+          )}
+        </NavLink>
+      </div>
     </header>
   );
 };
