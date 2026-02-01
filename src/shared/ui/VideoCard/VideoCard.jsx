@@ -35,7 +35,7 @@ const VideoCard = ({ item }) => {
     }
   };
 
-  const handleVideoLoad = () => {
+  const handleLoaded = () => {
     setIsLoaded(true);
   };
 
@@ -54,11 +54,9 @@ const VideoCard = ({ item }) => {
         <video
           className={`videocard__video ${isLoaded ? "videocard__video--visible" : ""}`}
           ref={videoRef}
-          playsInline
-          preload="auto"
-          onLoadedData={handleVideoLoad}
-          onLoadedMetadata={handleVideoLoad}
-          onError={handleVideoLoad}
+          width="320"
+          onLoadedData={handleLoaded}
+          onLoadedMetadata={handleLoaded}
           onEnded={() => setIsPlaying(false)}
         >
           <source src={whoaVideo} type="video/mp4" />
