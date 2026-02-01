@@ -36,7 +36,7 @@ const VideoCard = ({ item }) => {
   };
 
   const handleVideoLoad = () => {
-    setIsPlaying(true);
+    setIsLoaded(true);
   };
 
   const toggleFavorite = useCallback(() => {
