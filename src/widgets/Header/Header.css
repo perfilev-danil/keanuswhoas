@@ -49,10 +49,12 @@
   border: none;
   outline: none;
 
+  background-color: var(--color-primary);
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   border-radius: 0;
+  box-shadow: none;
 }
 
 .header__favorites {
