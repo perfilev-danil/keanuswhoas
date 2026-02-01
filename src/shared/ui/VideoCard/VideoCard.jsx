@@ -54,7 +54,8 @@ const VideoCard = ({ item }) => {
         <video
           className={`videocard__video ${isLoaded ? "videocard__video--visible" : ""}`}
           ref={videoRef}
-          width="320"
+          playsInline
+          preload="auto"
           onLoadedData={handleLoaded}
           onLoadedMetadata={handleLoaded}
           onEnded={() => setIsPlaying(false)}
