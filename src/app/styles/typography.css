@@ -37,7 +37,8 @@ h1 {
   }
 
   .important {
-    font-size: 25px;
+    font-size: 20px;
+    line-height: 1.2;
   }
 
   h1 {

@@ -23,7 +23,7 @@ const Banner = () => {
           <div className="banner__meta">
             <span className="banner__left">Which one is your favorite?</span>
             <span className="banner__right">
-              every "whoa" said by actor Keanu Reeves in his movies
+              Every "whoa" said by actor Keanu Reeves in his movies
             </span>
           </div>
         </div>
