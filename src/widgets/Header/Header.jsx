@@ -13,18 +13,6 @@ const Header = () => {
   const [search, setSearch] = useState("");
   const debouncedSearch = useDebounce(search, 500);
 
-  /*
-  
-  useEffect(() => {
-    if (debouncedSearch.trim()) {
-      navigate(`/whoas/${encodeURIComponent(debouncedSearch.trim())}`);
-    } else {
-      navigate(routes.Home);
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [debouncedSearch]);
-  */
-
   useEffect(() => {
     const value = debouncedSearch.trim();
     if (!value) return;
