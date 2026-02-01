@@ -59,6 +59,6 @@
   }
 
   .app__content {
-    overflow: scroll;
+    overflow-y: scroll;
   }
 }
