@@ -1,6 +1,6 @@
 :root {
   --font-primary: "Absans", system-ui, -apple-system, sans-serif;
-  --font-secondary: "Comic_CAT", Georgia, serif;
+  --font-secondary: "Montserrat", Georgia, serif;
 }
 
 body {
@@ -9,24 +9,26 @@ body {
   line-height: 1.5;
 }
 
-.important {
-  font-size: 80px;
-  line-height: 1.5;
-}
-
-.logo {
-  font-family: var(--font-secondary);
-}
-
-input {
-  font-family: var(--font-secondary);
-}
-
 h1 {
   font-family: var(--font-secondary);
   font-size: 40px;
   line-height: 1;
   margin: 0;
+}
+
+.logo,
+input {
+  font-family: var(--font-secondary);
+}
+
+.important {
+  font-size: 60px;
+  line-height: 1;
+}
+
+.text-accent {
+  font-family: var(--font-secondary);
+  font-style: italic;
 }
 
 @media (max-width: 800px) {
@@ -38,7 +40,6 @@ h1 {
 
   .important {
     font-size: 20px;
-    line-height: 1.2;
   }
 
   h1 {

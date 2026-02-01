@@ -1,7 +1,7 @@
 .banner {
   width: auto;
   height: 100%;
-  border: 1px solid black;
+  border: 1px solid var(--color-seconary);
   position: relative;
 }
 
@@ -20,11 +20,11 @@
 
 .banner__content {
   width: 100%;
-  color: white;
+  color: var(--color-primary);
   position: absolute;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 0;
   bottom: 0;
   right: 0;
   padding: 10px;
@@ -33,12 +33,19 @@
 .banner__meta {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
 }
 
 .banner__title {
   text-align: right;
 }
 
-.banner__right {
+.banner__question {
+  color: var(--color-seconary);
+  background-color: var(--color-accent);
+  padding: 10px;
+}
+
+.banner__description {
   text-align: right;
 }

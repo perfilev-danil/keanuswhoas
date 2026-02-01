@@ -5,9 +5,9 @@
   width: 100%;
   height: 60px;
   padding: 0 10px;
-  color: white;
-  background-color: #beaf9b;
-  border: 1px solid black;
+  color: var(--color-primary);
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-seconary);
   z-index: 1000;
 }
 

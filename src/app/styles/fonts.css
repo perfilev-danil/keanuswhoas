@@ -4,6 +4,13 @@
 }
 
 @font-face {
-  font-family: "Comic_CAT";
-  src: url("../../assets/fonts/Comic_CAT.otf") format("opentype");
+  font-family: "Montserrat";
+  src: url("../../assets/fonts/Montserrat-bold.ttf") format("truetype");
+  font-style: bold;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../../assets/fonts/Montserrat-italic.ttf") format("truetype");
+  font-style: italic;
 }

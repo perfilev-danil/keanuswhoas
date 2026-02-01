@@ -56,7 +56,6 @@ const VideoCard = ({ item }) => {
           ref={videoRef}
           playsInline
           preload="auto"
-          poster={item.poster}
           onLoadedData={handleVideoLoad}
           onLoadedMetadata={handleVideoLoad}
           onError={handleVideoLoad}
@@ -66,7 +65,7 @@ const VideoCard = ({ item }) => {
         </video>
       </div>
       <div className="videocard__info">
-        <p className="videocard__full-line">{item.full_line}</p>
+        <p className="videocard__full-line text-accent">{item.full_line}</p>
         <div className="videocard_tools">
           <FavoritesButton onClick={toggleFavorite} isFavorited={isFavorited} />
           <button className="videocard__state" onClick={togglePlay}>

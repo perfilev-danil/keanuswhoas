@@ -1,5 +1,5 @@
 import "./Banner.css";
-import bannerImg from "../../../../assets/images/good-fortune.jpg";
+import bannerImg from "../../../../assets/images/gabriel.jpg";
 import { useState } from "react";
 import Loader from "../../../../shared/ui/Loader/Loader";
 
@@ -18,11 +18,13 @@ const Banner = () => {
       {isLoaded && (
         <div className="banner__content">
           <h1 className="banner__title important">
-            The <br /> Keanu Reeves's <br /> whoas base
+            Keanu Reeves's <br /> WHOAS base
           </h1>
           <div className="banner__meta">
-            <span className="banner__left">Which one is your favorite?</span>
-            <span className="banner__right">
+            <span className="banner__question text-accent">
+              Which one is your favorite?
+            </span>
+            <span className="banner__description ">
               Every "whoa" said by actor Keanu Reeves in his movies
             </span>
           </div>

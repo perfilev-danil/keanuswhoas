@@ -19,9 +19,9 @@
 
 .nav-movies__link--active {
   padding: 10px;
-  color: white;
-  background-color: #456b7d;
-  border: 1px solid black;
+  color: var(--color-primary);
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-seconary);
 }
 
 @media (max-width: 800px) {
