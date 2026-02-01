@@ -35,10 +35,6 @@ const VideoCard = ({ item }) => {
     }
   };
 
-  const handleEnded = () => {
-    setIsPlaying(false);
-  };
-
   const toggleFavorite = useCallback(() => {
     if (isFavorited) {
       dispatch(removeFromFavorites(item));
@@ -54,9 +50,11 @@ const VideoCard = ({ item }) => {
         <video
           className={`videocard__video ${isLoaded ? "videocard__video--visible" : ""}`}
           ref={videoRef}
-          width="320"
+          playsInline
+          preload="metadata"
           onLoadedData={() => setIsLoaded(true)}
-          onEnded={handleEnded}
+          onError={() => setIsLoaded(true)}
+          onEnded={() => setIsPlaying(false)}
         >
           <source src={whoaVideo} type="video/mp4" />
         </video>
