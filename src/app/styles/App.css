@@ -41,8 +41,8 @@
 @media (max-width: 800px) {
   .app {
     width: 100%;
-    min-height: 100svh;
-    min-height: -webkit-fill-available;
+    min-height: 100dvh;
+    padding-bottom: env(safe-area-inset-bottom);
   }
 
   .app__main {
@@ -51,7 +51,7 @@
   }
 
   .app__sidebar {
-    height: 20%;
+    height: 100px;
     width: 100%;
     overflow-y: auto;
   }
