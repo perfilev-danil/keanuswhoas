@@ -56,6 +56,7 @@ const VideoCard = ({ item }) => {
           ref={videoRef}
           playsInline
           preload="auto"
+          poster={item.poster}
           onLoadedData={handleVideoLoad}
           onLoadedMetadata={handleVideoLoad}
           onError={handleVideoLoad}
