@@ -17,12 +17,8 @@ const Whoas = () => {
     return <Loader />;
   }
 
-  if (isError) {
-    return (
-      <div className="centered">
-        No data! <br /> Please reload page!
-      </div>
-    );
+  if (isError | (whoas.length == 0)) {
+    return <div className="centered">No whoas for now!</div>;
   }
 
   const movie = whoas[0];
