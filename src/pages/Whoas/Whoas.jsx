@@ -17,7 +17,7 @@ const Whoas = () => {
     return <Loader />;
   }
 
-  if (isError | (whoas.length == 0)) {
+  if (isError || whoas.length == 0) {
     return <div className="centered">No whoas for now!</div>;
   }
 
