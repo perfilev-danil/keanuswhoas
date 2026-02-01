@@ -57,8 +57,8 @@ const VideoCard = ({ item }) => {
           playsInline
           preload="metadata"
           onLoadedData={handleVideoLoad}
-          onCanPlay={handleVideoLoad}
-          onCanPlayThrough={handleVideoLoad}
+          onLoadedMetadata={handleVideoLoad}
+          onError={handleVideoLoad}
           onEnded={() => setIsPlaying(false)}
         >
           <source src={whoaVideo} type="video/mp4" />
