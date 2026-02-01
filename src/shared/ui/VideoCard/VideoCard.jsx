@@ -26,11 +26,6 @@ const VideoCard = ({ item }) => {
     const video = videoRef.current;
     if (!video) return;
 
-    if (!isLoaded) {
-      setIsLoaded(true);
-      video.load();
-    }
-
     if (video.paused) {
       await video.play();
       setIsPlaying(true);
@@ -38,6 +33,10 @@ const VideoCard = ({ item }) => {
       video.pause();
       setIsPlaying(false);
     }
+  };
+
+  const handleVideoLoad = () => {
+    setIsPlaying(true);
   };
 
   const toggleFavorite = useCallback(() => {
@@ -57,8 +56,9 @@ const VideoCard = ({ item }) => {
           ref={videoRef}
           playsInline
           preload="metadata"
-          onLoadedData={() => setIsLoaded(true)}
-          onError={() => setIsLoaded(true)}
+          onLoadedData={handleVideoLoad}
+          onCanPlay={handleVideoLoad}
+          onCanPlayThrough={handleVideoLoad}
           onEnded={() => setIsPlaying(false)}
         >
           <source src={whoaVideo} type="video/mp4" />
