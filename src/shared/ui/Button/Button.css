@@ -1,0 +1,20 @@
+.button {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button--bordered {
+  border: 1px solid var(--color-secondary);
+}
+
+.button--whitened {
+  background-color: var(--color-primary);
+}
+
+.button__img {
+  width: 20px;
+  height: 20px;
+}
