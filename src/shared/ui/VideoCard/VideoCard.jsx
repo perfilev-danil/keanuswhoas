@@ -26,6 +26,11 @@ const VideoCard = ({ item }) => {
     const video = videoRef.current;
     if (!video) return;
 
+    if (!isLoaded) {
+      setIsLoaded(true);
+      video.load();
+    }
+
     if (video.paused) {
       await video.play();
       setIsPlaying(true);
