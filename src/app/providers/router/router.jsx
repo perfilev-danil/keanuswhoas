@@ -1,9 +1,9 @@
 import { Routes, Route } from "react-router-dom";
 import { routes } from "./routes";
-import Home from "../../pages/Home/Home";
-import Whoas from "../../pages/Whoas/Whoas";
-import Favorites from "../../pages/Favorites/Favorites";
-import NotFound from "../../pages/NotFound/NotFound";
+import Home from "../../../pages/Home/Home";
+import Whoas from "../../../pages/Whoas/Whoas";
+import Favorites from "../../../pages/Favorites/Favorites";
+import NotFound from "../../../pages/NotFound/NotFound";
 
 const AppRouter = () => {
   return (

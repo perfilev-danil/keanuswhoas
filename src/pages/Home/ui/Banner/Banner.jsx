@@ -3,7 +3,7 @@ import bannerImg from "../../../../assets/images/gabriel.jpg";
 import { useState } from "react";
 import Loader from "../../../../shared/ui/Loader/Loader";
 import { Link } from "react-router-dom";
-import { routes } from "../../../../app/router/routes";
+import { routes } from "../../../../app/providers/router/routes";
 
 const Banner = () => {
   const [isLoaded, setIsLoaded] = useState(false);

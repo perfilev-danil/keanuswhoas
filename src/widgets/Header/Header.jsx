@@ -3,7 +3,7 @@ import favoriteImg from "../../assets/ui/favorite.svg";
 import { NavLink, useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { useState } from "react";
-import { routes } from "../../app/router/routes";
+import { routes } from "../../app/providers/router/routes";
 import Button from "../../shared/ui/Button/Button";
 import searchImg from "../../assets/ui/search.svg";
 import cancelImg from "../../assets/ui/cancel.svg";

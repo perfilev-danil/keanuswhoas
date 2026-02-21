@@ -1,6 +1,6 @@
 import { configureStore } from "@reduxjs/toolkit";
-import { moviesApi } from "../../shared/api/moviesApi";
-import favoriteReducer from "../../features/favorites/model/favoritesSlice";
+import { moviesApi } from "../../../shared/api/moviesApi";
+import favoriteReducer from "../../../features/favorites/model/favoritesSlice";
 
 export const store = configureStore({
   reducer: {
