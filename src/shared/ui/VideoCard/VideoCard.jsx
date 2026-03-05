@@ -1,7 +1,7 @@
 import "./VideoCard.css";
 import playImg from "../../../assets/ui/play.svg";
 import pauseImg from "../../../assets/ui/pause.svg";
-import { useState, useRef, useMemo, useCallback } from "react";
+import { useState, useRef, useCallback } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import {
   removeFromFavorites,
@@ -18,16 +18,14 @@ const VideoCard = ({ item }) => {
   const { list } = useSelector((state) => state.favorites);
   const whoaVideo = item.video["360p"];
 
-  const isFavorited = useMemo(() => {
-    return list.some((item) => item.video["360p"] === whoaVideo);
-  }, [list, whoaVideo]);
+  const isFavorited = list.some((item) => item.video["360p"] === whoaVideo);
 
-  const togglePlay = async () => {
+  const togglePlay = () => {
     const video = videoRef.current;
     if (!video) return;
 
     if (video.paused) {
-      await video.play();
+      video.play();
       setIsPlaying(true);
     } else {
       video.pause();
@@ -55,9 +53,8 @@ const VideoCard = ({ item }) => {
           className={`videocard__video ${isLoaded ? "videocard__video--visible" : ""}`}
           ref={videoRef}
           playsInline
-          preload="auto"
+          preload="metadata"
           onLoadedData={handleLoaded}
-          onLoadedMetadata={handleLoaded}
           onEnded={() => setIsPlaying(false)}
         >
           <source src={whoaVideo} type="video/mp4" />
