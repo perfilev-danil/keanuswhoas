@@ -86,4 +86,4 @@ The project follows the Feature-Sliced Design (FSD) architecture.
 
 Distributed under the MIT License.
 
-<div align="center"> Whoa... ✨ Made with ❤️ by Danil Perfilev </div>
+<div align="center"> Whoa... ✨ Made with ❤️ by Danil Perfilev. </div>
