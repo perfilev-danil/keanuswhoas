@@ -3,8 +3,11 @@
 <div>
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=000" alt="JavaScript">
   <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React">
-  <img src="https://img.shields.io/badge/Redux-764ABC?style=for-the-badge&logo=redux&logoColor=var(--color-primary)" alt="Redux">
+  <img src="https://img.shields.io/badge/Redux%20Toolkit-593D88?style=for-the-badge&logo=redux&logoColor=white" alt="Redux Toolkit">
+  <img src="https://img.shields.io/badge/RTK%20Query-593D88?style=for-the-badge&logo=redux&logoColor=white" alt="RTK Query">
   <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=var(--color-primary)" alt="Vite">
+  <img src="https://img.shields.io/badge/BEM%20Methodology-000000?style=for-the-badge&logo=css3&logoColor=white" alt="BEM">
+  <img src="https://img.shields.io/badge/Feature%20Sliced%20Design-FSD-blue?style=for-the-badge" alt="FSD">
 </div>
 
 A web application for browsing iconic **"Whoa"** moments from Keanu Reeves movies using the public API.
