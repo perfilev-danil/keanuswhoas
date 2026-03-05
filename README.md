@@ -17,77 +17,67 @@ A web application for browsing iconic **"Whoa"** moments from Keanu Reeves movie
 
 ### 🎥 Movie Browsing
 
-- Search movies by name with **debounced input** to avoid excessive API calls
-- Browse all "whoa" clips from selected movies
-- **Sidebar navigation** with active link highlighting
+- Browse all "whoa" said by actor Keanu Reeves in his movies
 
 ### ❤️ Favorites System
 
 - Save favorite clips with **one click**
-- Real-time counter showing total favorites in header
 - Persistent storage using **Redux state management**
 
 ### 🎬 Video Playback
 
 - Play/pause videos directly on their cards
-- **Responsive video player** with smooth controls
 
 ### 📱 Responsive Design
 
-- Fixed navigation (header, sidebar, footer) with scrollable main content
 - Mobile-friendly layout adapting to all screen sizes
 
 ---
 
 ## 🚀 Quick Start
 
-### Prerequisites
-
-- Node.js 16.0 or higher
-- npm package manager
-
-### Installation
-
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/perfilev-danil/keanuswhoas
+git clone https://github.com/perfilev-danil/keanuswhoas.git
+```
+
+2. Go to the project directory:
+
+```bash
 cd keanu-whoas
 ```
 
-2. Install dependencies:
+3. Install dependencies:
 
 ```bash
 npm install
 ```
 
-3. Start the development server:
+4. Start the development server:
 
 ```bash
 npm run dev
 ```
 
-4. Open your browser and navigate to http://localhost:5173
+---
 
 ## 🛠️ Technologies
 
-- React - UI Library
-- Vite - Build Tool & Dev Server
-- Redux Toolkit - State Management
-- RTK Query - Data Fetching & Caching
+- React
+- Vite
+- Redux Toolkit
+- RTK Query
 - JavaScript (ES6+)
-- CSS3 with BEM - Styling Methodology
+- CSS3 with BEM
 
-## Performance Optimizations
+---
 
-- React.memo for component memoization
-- useMemo & useCallback hooks to prevent unnecessary re-renders
-- Custom debounce hook for search input
-- Efficient Redux state updates
+## 📐 Architecture
 
-## Project Structure
+The project follows the Feature-Sliced Design (FSD) architecture.
 
-The project is built following the Feature-Sliced Design (FSD) methodology. Each feature, shared component, and UI element is organized into separate layers (widgets, entities, features, shared, pages), ensuring clear separation of concerns and scalable architecture.
+---
 
 ## 📄 License
 
